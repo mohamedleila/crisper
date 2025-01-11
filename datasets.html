@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="css/models.css" />
+  </head>
+  <body>
+    <!-- nav start  -->
+    <nav class="navbar navbar-expand-lg mb-0 d-flex justify-content-around">
+      <div class="container-fluid">
+        <button
+          class="btn text-white bg-transparent"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasScrolling"
+          aria-controls="offcanvasScrolling"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <a class="navbar-brand text-white fw-bold me-auto" href="index.html"
+          >Crisper</a
+        >
+
+        >
+        <button
+          class="navbar-toggler mb-0 text-white border-0 d-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-lines-leaning"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <form
+            class="d-flex justify-content-between ms-auto col-11 mt-md-0"
+            role="search"
+          >
+            <input
+              class="form-control me-2 rounded-4 border-0"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn border-0 bg-transparent text-white me-5"
+              type="submit"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+        <a
+          class="btn nav-link log-btn text-center text-white ps-2 pe-2 pt-1 pb-1 fw-bolder"
+          href="#"
+          ><i class="fa-solid fa-right-from-bracket me-2"></i>Sign In</a
+        >
+      </div>
+    </nav>
+
+    <!-- nav end -->
+
+    <!-- sidebar start -->
+
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-scroll="true"
+      data-bs-backdrop="false"
+      tabindex="-1"
+      id="offcanvasScrolling"
+      aria-labelledby="offcanvasScrollingLabel"
+    >
+      <div class="offcanvas-header d-flex justify-content-center">
+        <button
+          type="button"
+          class="btn-close btn-close-white ms-auto close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <form class="d-flex d-block d-lg-none" role="search">
+          <input
+            class="form-control rounded-4 border-0"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn border-0 bg-transparent text-white" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+        <nav class="nav flex-column side-links mt-3 me-auto">
+          <a class="nav-link mt-3" href="profile.html"
+            ><i class="fa-solid fa-user me-4"></i> Profile</a
+          >
+          <a class="nav-link mt-3" href="models.html"
+            ><i class="fa-solid fa-microchip me-4"></i> Models</a
+          >
+          <a class="nav-link mt-3" href="datasets.html"
+            ><i class="fa-solid fa-database me-4"></i> Datasets</a
+          >
+          <a
+            class="nav-link dropdown-toggle mt-3"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-gears me-4"></i> Settings</a
+          >
+          <ul class="dropdown-menu">
+            <li><a class="nav-link" href="account.html">Account</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- sidebar end -->
+    <section class="information-2 mb-5" id="about">
+      <div class="container">
+        <div class="row info-1 text-center">
+          <div class="col-md-6">
+            <div class="text-information-2">
+              <h5>You can choose from diffrent datasets</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+                est ut possimus quia natus sapiente numquam ad rem laudantium
+                veritatis.
+              </p>
+              <a
+                href="#datasets"
+                class="btn text-white rounded-4 add-btn d-none d-md-block m-auto"
+                >Pick one</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="imges/undraw_data_trends_re_2cdy.svg"
+              alt=""
+              class="img-fluid d-none d-md-block"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 d-flex justify-content-end">
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn rounded-4 me-4 mb-5 add-btn border-0 text-white"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <i class="fa-solid fa-plus me-1"></i> New dataset
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Add new dataset
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <form action="">
+                    <div class="mb-3">
+                      <label for="formGroupInput" class="form-label"
+                        >Enter dataset title</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="formGroupInput"
+                        placeholder="dataset title"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="formGroupInput" class="form-label"
+                        >Enter dataset description</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="formGroupInput"
+                        placeholder="dataset description"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="formFile" class="form-label"
+                        >upload dataset file
+                      </label>
+                      <input class="form-control" type="file" id="formFile" />
+                    </div>
+                    <button type="submit" class="btn btn-dark">Add</button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-dark">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex gap-5 flex-wrap justify-content-center" id="datasets">
+        <a
+          href="#"
+          class="card mb-3 border-0 card-art"
+          style="max-width: 18rem"
+        >
+          <div class="card-header bg-transparent border-0 text-start">
+            <h6>patient monkeys couse global warming</h6>
+            <p class="pt">mohamed leila</p>
+            <p class="pt-2">4/2/2023 7:17 pm</p>
+          </div>
+          <div class="card-body border-0">
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+          <div
+            class="card-footer bg-transparent d-flex justify-content-between border-0"
+          >
+            <i class="fa-regular fa-heart text-danger"></i>
+            <i class="fa-regular fa-bookmark text-primary"></i>
+            <i class="fa-regular fa-star text-warning"></i>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="card mb-3 border-0 card-art"
+          style="max-width: 18rem"
+        >
+          <div class="card-header bg-transparent border-0 text-start">
+            <h6>patient monkeys couse global warming</h6>
+            <p class="pt">mohamed leila</p>
+            <p class="pt-2">4/2/2023 7:17 pm</p>
+          </div>
+          <div class="card-body border-0">
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+          <div
+            class="card-footer bg-transparent d-flex justify-content-between border-0"
+          >
+            <i class="fa-regular fa-heart text-danger"></i>
+            <i class="fa-regular fa-bookmark text-primary"></i>
+            <i class="fa-regular fa-star text-warning"></i>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="card mb-3 border-0 card-art"
+          style="max-width: 18rem"
+        >
+          <div class="card-header bg-transparent border-0 text-start">
+            <h6>patient monkeys couse global warming</h6>
+            <p class="pt">mohamed leila</p>
+            <p class="pt-2">4/2/2023 7:17 pm</p>
+          </div>
+          <div class="card-body border-0">
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+          <div
+            class="card-footer bg-transparent d-flex justify-content-between border-0"
+          >
+            <i class="fa-regular fa-heart text-danger"></i>
+            <i class="fa-regular fa-bookmark text-primary"></i>
+            <i class="fa-regular fa-star text-warning"></i>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="card mb-3 border-0 card-art"
+          style="max-width: 18rem"
+        >
+          <div class="card-header bg-transparent border-0 text-start">
+            <h6>patient monkeys couse global warming</h6>
+            <p class="pt">mohamed leila</p>
+            <p class="pt-2">4/2/2023 7:17 pm</p>
+          </div>
+          <div class="card-body border-0">
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+          <div
+            class="card-footer bg-transparent d-flex justify-content-between border-0"
+          >
+            <i class="fa-regular fa-heart text-danger"></i>
+            <i class="fa-regular fa-bookmark text-primary"></i>
+            <i class="fa-regular fa-star text-warning"></i>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="card mb-3 border-0 card-art"
+          style="max-width: 18rem"
+        >
+          <div class="card-header bg-transparent border-0 text-start">
+            <h6>patient monkeys couse global warming</h6>
+            <p class="pt">mohamed leila</p>
+            <p class="pt-2">4/2/2023 7:17 pm</p>
+          </div>
+          <div class="card-body border-0">
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+          <div
+            class="card-footer bg-transparent d-flex justify-content-between border-0"
+          >
+            <i class="fa-regular fa-heart text-danger"></i>
+            <i class="fa-regular fa-bookmark text-primary"></i>
+            <i class="fa-regular fa-star text-warning"></i>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="card mb-3 border-0 card-art"
+          style="max-width: 18rem"
+        >
+          <div class="card-header bg-transparent border-0 text-start">
+            <h6>patient monkeys couse global warming</h6>
+            <p class="pt">mohamed leila</p>
+            <p class="pt-2">4/2/2023 7:17 pm</p>
+          </div>
+          <div class="card-body border-0">
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+          <div
+            class="card-footer bg-transparent d-flex justify-content-between border-0"
+          >
+            <i class="fa-regular fa-heart text-danger"></i>
+            <i class="fa-regular fa-bookmark text-primary"></i>
+            <i class="fa-regular fa-star text-warning"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+    <script src="page.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+  </body>
+</html>

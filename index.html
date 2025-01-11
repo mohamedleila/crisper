@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css.map" />
+  </head>
+  <body>
+    <!-- nav start  -->
+    <nav
+      class="navbar navbar-expand-lg mb-0 fixed-top bg-transparent d-flex justify-content-around"
+    >
+      <div class="container-fluid">
+        <button
+          class="btn text-white bg-transparent"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasScrolling"
+          aria-controls="offcanvasScrolling"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <a class="navbar-brand text-white fw-bold me-auto" href="index.html"
+          >Crisper</a
+        >
+
+        >
+        <button
+          class="navbar-toggler mb-0 text-white border-0 d-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-lines-leaning"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <form
+            class="d-flex justify-content-between ms-auto col-11 mt-md-0"
+            role="search"
+          >
+            <input
+              class="form-control me-2 rounded-4 border-0"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn border-0 bg-transparent text-white me-5"
+              type="submit"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+        <a
+          class="btn nav-link log-btn text-center text-white ps-2 pe-2 pt-1 pb-1 fw-bolder"
+          href="#"
+          ><i class="fa-solid fa-right-from-bracket me-2"></i> Sign In</a
+        >
+      </div>
+    </nav>
+
+    <!-- nav end -->
+
+    <!-- sidebar start -->
+
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-scroll="true"
+      data-bs-backdrop="false"
+      tabindex="-1"
+      id="offcanvasScrolling"
+      aria-labelledby="offcanvasScrollingLabel"
+    >
+      <div class="offcanvas-header d-flex justify-content-center">
+        <button
+          type="button"
+          class="btn-close btn-close-white ms-auto close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <form class="d-flex d-block d-lg-none" role="search">
+          <input
+            class="form-control rounded-4 border-0"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn border-0 bg-transparent text-white" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+        <nav class="nav flex-column side-links mt-3 me-auto">
+          <a class="nav-link mt-3" href="profile.html"
+            ><i class="fa-solid fa-user me-4"></i> Profile</a
+          >
+          <a class="nav-link mt-3" href="models.html"
+            ><i class="fa-solid fa-microchip me-4"></i> Models</a
+          >
+          <a class="nav-link mt-3" href="datasets.html"
+            ><i class="fa-solid fa-database me-4"></i> Datasets</a
+          >
+          <a
+            class="nav-link dropdown-toggle mt-3"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-gears me-4"></i> Settings</a
+          >
+          <ul class="dropdown-menu">
+            <li><a class="nav-link" href="account.html">Account</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- sidebar end -->
+    <!-- main section-1 satrt -->
+    <section class="main">
+      <div class="background text-center">
+        <p class="main-word">GIVE US YOUR HAND</p>
+        <a href="models.html" class="btn main-btn">start the journy</a>
+      </div>
+    </section>
+    <!-- section-1 end -->
+    <!-- section-2 start   -->
+    <!-- <section class="information" id="about">
+      <div class="container">
+        <div class="row info-1 text-center">
+          <div class="col-md-6">
+            <div class="text-information">
+              <h5>HI</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+                est ut possimus quia natus sapiente numquam ad rem laudantium
+                veritatis.
+              </p>
+              <a href="#serveses" class="btn main-btn">more serveses</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="imges/hero-img.png"
+              alt=""
+              class="img-fluid d-none d-md-block"
+            />
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- section-2 end   -->
+
+    <!-- section-3 start -->
+    <!-- <section class="serv">
+      <div class="container">
+        <div class="text-header text-center">
+          <h3 id="serveses">servieces</h3>
+        </div>
+        <div class="items text-center">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="icons">
+                <i class="fa-solid fa-magnifying-glass icon"></i>
+              </div>
+              <div class="cont">
+                <h5>Check about lung cancer</h5>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Dolores fugit dignissimos assumenda nisi eaque placeat alias!
+                  Labore.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="icons">
+                <i class="fa-solid fa-flask icon"></i>
+              </div>
+              <div class="cont">
+                <h5>Add models</h5>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Dolores fugit dignissimos assumenda nisi eaque placeat alias!
+                  Labore.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="icons">
+                <i class="fa-solid fa-pen-to-square icon"></i>
+              </div>
+              <div class="cont">
+                <h5>Add datasets</h5>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Dolores fugit dignissimos assumenda nisi eaque placeat alias!
+                  Labore.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- section-3 end -->
+    <script src="page.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/result.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- nav start  -->
+    <nav
+      class="navbar navbar-expand-lg mb-0 d-flex justify-content-around fixed-top"
+    >
+      <div class="container-fluid">
+        <button
+          class="btn text-white bg-transparent"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasScrolling"
+          aria-controls="offcanvasScrolling"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <a class="navbar-brand text-white fw-bold me-auto" href="index.html">
+          Crisper</a
+        >
+
+        >
+        <button
+          class="navbar-toggler mb-0 text-white border-0 d-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-lines-leaning"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <form
+            class="d-flex justify-content-between ms-auto col-11 mt-md-0"
+            role="search"
+          >
+            <input
+              class="form-control me-2 rounded-4 border-0"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn border-0 bg-transparent text-white me-5"
+              type="submit"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+        <a
+          class="btn nav-link log-btn text-center text-white ps-2 pe-2 pt-1 pb-1 fw-bolder"
+          href="#"
+          ><i class="fa-solid fa-right-from-bracket me-2"></i>Sign In</a
+        >
+      </div>
+    </nav>
+
+    <!-- nav end -->
+
+    <!-- sidebar start -->
+
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-scroll="true"
+      data-bs-backdrop="false"
+      tabindex="-1"
+      id="offcanvasScrolling"
+      aria-labelledby="offcanvasScrollingLabel"
+    >
+      <div class="offcanvas-header d-flex justify-content-center">
+        <button
+          type="button"
+          class="btn-close btn-close-white ms-auto close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <form class="d-flex d-block d-lg-none" role="search">
+          <input
+            class="form-control rounded-4 border-0"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn border-0 bg-transparent text-white" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+        <nav class="nav flex-column side-links mt-3 me-auto">
+          <a class="nav-link mt-3" href="profile.html"
+            ><i class="fa-solid fa-user me-4"></i> Profile</a
+          >
+          <a class="nav-link mt-3" href="models.html"
+            ><i class="fa-solid fa-microchip me-4"></i> Models</a
+          >
+          <a class="nav-link mt-3" href="datasets.html"
+            ><i class="fa-solid fa-database me-4"></i> Datasets</a
+          >
+          <a
+            class="nav-link dropdown-toggle mt-3"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-gears me-4"></i> Settings</a
+          >
+          <ul class="dropdown-menu">
+            <li><a class="nav-link" href="account.html">Account</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- sidebar end -->
+    <section class="container">
+      <div class="row w-100">
+        <div class="col-md-12">
+          <label for="sequance" class="drop-container">
+            <span class="drop-title">Drop your file sequance</span>
+            or
+            <input type="file" id="sequance" accept="sequance/*" required />
+          </label>
+        </div>
+      </div>
+      <div class="result-btn">
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          class="btn btn-2"
+          data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop"
+        >
+          Result
+        </button>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="staticBackdrop"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">
+                  Test Results
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">First</th>
+                      <th scope="col">Last</th>
+                      <th scope="col">Handle</th>
+                    </tr>
+                  </thead>
+                </table>
+
+                <div class="">
+                  <p>Query 1</p>
+                  <p>Query 1</p>
+                </div>
+                <div class="alignment overflow-auto">
+                  <div class="alignment-row">
+                    <span class="sequence"
+                      >ACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGT</span
+                    >
+                  </div>
+                  <div class="seperate">
+                    <span class="sequence"
+                      >||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</span
+                    >
+                  </div>
+                  <div class="alignment-row">
+                    <span class="sequence"
+                      >ACGTAGCTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGT</span
+                    >
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <p>60</p>
+                  <p>60</p>
+                </div>
+              </div>
+
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="page.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+  </body>
+</html>

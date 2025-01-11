@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css.map" />
+    <style>
+      .cont {
+        display: flex;
+        gap: 0px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+      pre {
+        padding: -30px;
+        font-size: 18px;
+        width: ;
+        margin-left: -55px;
+      }
+      .alignment {
+        font-family: monospace;
+      }
+      .sequence {
+        line-height: 1;
+        font-family: monospace;
+      }
+      .harm {
+        color: red;
+
+        font-weight: 800;
+        transition: 0.3s ease all;
+      }
+      .good {
+        color: green;
+
+        font-weight: 800;
+        transition: 0.3s ease;
+      }
+      .harm:hover {
+        font-size: 30px;
+      }
+      .good:hover {
+        font-size: 30px;
+      }
+      .gsequ {
+        color: green;
+      }
+      .gsequ p {
+        margin-left: 294.5px;
+        background-color: honeydew;
+        width: fit-content;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid w-100">
+      <div class="table-1">
+        <table class="table">
+          <thead>
+            <tr class="text-center">
+              <th scope="col" class="text-danger">Score</th>
+              <th scope="col" class="text-warning">Identities</th>
+              <th scope="col" class="text-bg-secondary">Gaps</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="text-center">
+              <td>5236 bits(2835)</td>
+              <td>2835/2835(100%)</td>
+              <td>0/2835(0%)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- <div class="container-fluid mt-5" style="width: 800px">
+        <div class="w-100 bg-light">
+          <div class="row" style="">
+            <div class="col-2">
+              <span>opject 1</span>
+            </div>
+            <div class="col-8 alignment">
+              <span>
+                ACGTACGTACACGTACGTACACGTACGTACACGTACGTACACGTACGTACACGTACGTAC</span
+              >
+            </div>
+            <div class="col-2">
+              <span class="ms-3">60</span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-2">
+              <span></span>
+            </div>
+            <div class="col-8 alignment">
+              <span
+                >||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+              </span>
+            </div>
+            <div class="col-2">
+              <span></span>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-2">
+              <span>subject 1</span>
+            </div>
+            <div class="col-8 alignment">
+              <span>
+                ACGTACGTACACGTACGTACACGTACGTACACGTACGTACACGTACGTACACGTACGTAC</span
+              >
+            </div>
+            <div class="col-2">
+              <span class="ms-3">60</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid mt-5" style="width: 800px">
+        <div class="w-100 bg-light">
+          <div class="row">
+            <div class="col-2">
+              <span>opject 61</span>
+            </div>
+            <div class="col-8 alignment">
+              <span>
+                <span class="good">A</span>CGTACGTACACGTACGTACAC<span
+                  class="harm"
+                  >G</span
+                >TACGTACACGTACGTACACGTACGTACACGTACGTAC</span
+              >
+            </div>
+            <div class="col-2">
+              <span class="ms-3">120</span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-2">
+              <span></span>
+            </div>
+            <div class="col-9 alignment">
+              <span
+                >|||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||
+              </span>
+            </div>
+            <div class="col-1">
+              <span></span>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-2">
+              <span>subject 61</span>
+            </div>
+            <div class="col-8 alignment">
+              <span>
+                <span class="good">C</span>CGTACGTACACGTACGTACAC<span
+                  class="harm"
+                  >G</span
+                >TACGTACACGTACGTACACGTACGTACACGTACGTAC</span
+              >
+            </div>
+            <div class="col-2">
+              <span class="ms-3">120</span>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="gsequ">
+        <p class="gtext">GATGCGGTGGGAGGCTGTCAGTGG</p>
+      </div>
+
+      <div class="container-fluid cont">
+        <pre class="good">
+    A 
+    :
+    T
+       </pre
+        >
+        <pre class="harm">
+    A 
+    .
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+
+        <pre class="harm">
+    A 
+    
+    T
+       </pre
+        >
+        <pre class="d-none">
+    A 
+    |
+    T
+       </pre
+        >
+        <pre class="good">
+    A 
+    :
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre class="harm">
+    A 
+    .
+    C
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre class="good">
+    A 
+    
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre class="harm">
+    A 
+    
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre class="harm">
+    A 
+    .
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre class="good">
+    A 
+    :
+    T
+       </pre
+        >
+      </div>
+      <div class="gsequ">
+        <p class="gtext">GATGCGGTGGGAGGCTGTCAGTGG</p>
+      </div>
+
+      <div class="container-fluid cont">
+        <pre class="good">
+    A 
+    :
+    T
+       </pre
+        >
+        <pre class="harm">
+    A 
+    .
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre class="harm">
+    A 
+    
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre class="good">
+    A 
+    :
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre class="harm">
+    A 
+    .
+    C
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre class="good">
+    A 
+    
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre class="harm">
+    A 
+    
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre class="harm">
+    A 
+    .
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre class="good">
+    A 
+    :
+    T
+       </pre
+        >
+      </div>
+      <div class="gsequ">
+        <p class="gtext">GATGCGGTGGGAGGCTGTCAGTGG</p>
+      </div>
+
+      <div class="container-fluid cont">
+        <pre class="good">
+    A 
+    :
+    T
+       </pre
+        >
+        <pre class="harm">
+    A 
+    .
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre class="harm">
+    A 
+    
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre class="good">
+    A 
+    :
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre class="harm">
+    A 
+    .
+    C
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre class="good">
+    A 
+    
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre class="harm">
+    A 
+    
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre class="harm">
+    A 
+    .
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre>
+    A 
+    |
+    T
+       </pre
+        >
+        <pre class="good">
+    A 
+    :
+    T
+       </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>
